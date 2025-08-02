@@ -6,7 +6,6 @@ A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/U
 
 - 🚀 **Cyberpunk-inspired design** with neon colors and glitch effects
 - 🛒 **Complete shopping workflow**:
-  - Product browsing with filtering
   - Detailed product views
   - Shopping cart management
   - Checkout process
