@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexusShop | Futuristic E-Commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Holographic Floating Cart -->
+    <div class="holographic-cart" id="floating-cart">
+        <div class="holographic-effect"></div>
+        <i class="fas fa-shopping-bag"></i>
+        <span class="cart-count" id="cart-count">0</span>
+    </div>
+    
+    <!-- Cyberpunk Header -->
+    <header class="cyber-header">
+        <div class="header-content">
+            <div class="logo-container">
+                <h1 class="logo">NEXUS<span>SHOP</span></h1>
+                <div class="logo-glow"></div>
+            </div>
+            <nav class="cyber-nav">
+                <button class="cyber-btn" id="view-products">
+                    <span class="btn-glitch"></span>
+                    <i class="fas fa-store"></i>
+                    <span>PRODUCTS</span>
+                </button>
+                <button class="cyber-btn" id="view-cart">
+                    <span class="btn-glitch"></span>
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>CART</span>
+                </button>
+                <button class="cyber-btn admin-btn" id="view-admin">
+                    <span class="btn-glitch"></span>
+                    <i class="fas fa-user-cog"></i>
+                    <span>ADMIN</span>
+                </button>
+            </nav>
+        </div>
+        <div class="header-neon"></div>
+    </header>
+
+    <main class="cyber-main">
+        <!-- Hero Section -->
+        <section class="cyber-hero" id="hero-view">
+            <div class="hero-content">
+                <h2 class="hero-title">
+                    <span class="title-glitch">FUTURE</span>
+                    <span class="title-glitch">OF</span>
+                    <span class="title-glitch">SHOPPING</span>
+                </h2>
+                <p class="hero-subtitle">Experience the next generation of e-commerce with augmented reality previews</p>
+                <button class="cyber-cta" id="explore-btn">
+                    <span class="cta-glitch"></span>
+                    EXPLORE NOW
+                </button>
+            </div>
+            <div class="hero-grid"></div>
+        </section>
+
+        <!-- Products View -->
+        <section id="products-view" class="view">
+            <div class="section-header">
+                <h2 class="section-title">FEATURED <span>PRODUCTS</span></h2>
+                <div class="cyber-tabs">
+                    <button class="cyber-tab active">ALL</button>
+                </div>
+            </div>
+            <div id="products-container" class="cyber-grid"></div>
+        </section>
+
+        <!-- Product Detail View -->
+        <section id="product-detail-view" class="view">
+            <div class="cyber-container">
+                <button id="back-to-products" class="cyber-back">
+                    <i class="fas fa-arrow-left"></i> BACK TO STORE
+                </button>
+                <div id="product-detail-container" class="cyber-detail"></div>
+            </div>
+        </section>
+
+        <!-- Cart View -->
+        <section id="cart-view" class="view">
+            <div class="cart-header">
+                <h2 class="section-title">YOUR <span>SELECTION</span></h2>
+                <button id="back-to-products-from-cart" class="cyber-back">
+                    <i class="fas fa-arrow-left"></i> CONTINUE SHOPPING
+                </button>
+            </div>
+            <div id="cart-items-container" class="cyber-cart"></div>
+            <div id="cart-summary" class="cyber-summary">
+                <div class="summary-row">
+                    <span>SUBTOTAL</span>
+                    <span class="cart-subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>SHIPPING</span>
+                    <span>CALCULATED AT CHECKOUT</span>
+                </div>
+                <div class="summary-row total">
+                    <span>TOTAL</span>
+                    <span class="cart-total">$0.00</span>
+                </div>
+                <button id="checkout-btn" class="cyber-checkout">
+                    <span class="checkout-glitch"></span>
+                    SECURE CHECKOUT
+                </button>
+            </div>
+        </section>
+
+        <!-- Checkout View -->
+        <section id="checkout-view" class="view">
+            <div class="cyber-checkout-container">
+                <h2 class="section-title">COMPLETE <span>PURCHASE</span></h2>
+                <button id="back-to-cart" class="cyber-back">
+                    <i class="fas fa-arrow-left"></i> BACK TO CART
+                </button>
+                
+                <form id="checkout-form" class="cyber-form">
+                    <div class="form-section">
+                        <h3 class="form-title">SHIPPING INFORMATION</h3>
+                        <div class="cyber-input">
+                            <input type="text" id="name" required>
+                            <label for="name">FULL NAME</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="cyber-input">
+                            <input type="email" id="email" required>
+                            <label for="email">EMAIL</label>
+                            <div class="input-border"></div>
+                        </div>
+                        <div class="cyber-input">
+                            <textarea id="address" required></textarea>
+                            <label for="address">SHIPPING ADDRESS</label>
+                            <div class="input-border"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-section">
+                        <h3 class="form-title">PAYMENT METHOD</h3>
+                        <div class="cyber-payment">
+                            <div class="payment-method active">
+                                <i class="fab fa-cc-visa"></i>
+                                <span>CREDIT CARD</span>
+                                <div class="payment-glow"></div>
+                            </div>
+                            <div class="payment-method">
+                                <i class="fab fa-cc-paypal"></i>
+                                <span>PAYPAL</span>
+                                <div class="payment-glow"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="place-order-btn" class="cyber-order">
+                        <i class="fas fa-lock"></i> PLACE ORDER
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Order Confirmation -->
+        <section id="order-confirmation-view" class="view">
+            <div class="cyber-confirmation">
+                <div class="confirmation-animation">
+                    <div class="cyber-circle"></div>
+                    <i class="fas fa-check"></i>
+                </div>
+                <h2 class="confirmation-title">ORDER <span>CONFIRMED!</span></h2>
+                <p class="confirmation-message">Your order #NX<span id="order-number">4839</span> has been processed. A confirmation has been sent to your email.</p>
+                <button id="back-to-products-from-confirmation" class="cyber-continue">
+                    CONTINUE SHOPPING
+                </button>
+            </div>
+        </section>
+
+        <!-- Admin View -->
+        <section id="admin-view" class="view">
+            <div class="cyber-admin">
+                <div class="admin-header">
+                    <h2 class="section-title">PRODUCT <span>DASHBOARD</span></h2>
+                    <button id="back-to-products-from-admin" class="cyber-back">
+                        <i class="fas fa-arrow-left"></i> BACK TO STORE
+                    </button>
+                </div>
+                
+                <div class="cyber-admin-tabs">
+                    <div class="admin-tab active" data-tab="manage">MANAGE PRODUCTS</div>
+                    <div class="admin-tab" data-tab="add">ADD NEW</div>
+                </div>
+                
+                <div class="admin-content">
+                    <div id="admin-manage-tab" class="admin-tab-content active">
+                        <h3 class="admin-subtitle">CURRENT PRODUCTS</h3>
+                        <div id="admin-products-container" class="cyber-admin-grid"></div>
+                    </div>
+                    
+                    <div id="admin-add-tab" class="admin-tab-content">
+                        <form id="add-product-form" class="cyber-admin-form">
+                            <div class="cyber-input">
+                                <input type="text" id="product-name" required>
+                                <label for="product-name">PRODUCT NAME</label>
+                                <div class="input-border"></div>
+                            </div>
+                            <div class="input-row">
+                                <div class="cyber-input">
+                                    <input type="number" id="product-price" step="0.01" required>
+                                    <label for="product-price">PRICE</label>
+                                    <div class="input-border"></div>
+                                </div>
+                                <div class="cyber-input">
+                                    <input type="text" id="product-image" required>
+                                    <label for="product-image">IMAGE URL</label>
+                                    <div class="input-border"></div>
+                                </div>
+                            </div>
+                            <div class="cyber-input">
+                                <input type="text" id="product-variants" required>
+                                <label for="product-variants">VARIANTS (COMMA SEPARATED)</label>
+                                <div class="input-border"></div>
+                            </div>
+                            <div class="cyber-input">
+                                <textarea id="product-description" required></textarea>
+                                <label for="product-description">DESCRIPTION</label>
+                                <div class="input-border"></div>
+                            </div>
+                            <button id="add-product-btn" class="cyber-admin-submit">
+                                <i class="fas fa-plus-circle"></i> ADD PRODUCT
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Cyberpunk Footer -->
+    <footer class="cyber-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">NEXUS<span>SHOP</span></div>
+                <p class="footer-tagline">REDEFINING THE FUTURE OF COMMERCE</p>
+                <div class="cyber-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">NAVIGATION</h4>
+                <ul class="cyber-links">
+                    <li><a href="#" id="footer-products">PRODUCTS</a></li>
+                    <li><a href="#" id="footer-cart">CART</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">SUPPORT</h4>
+                <ul class="cyber-links">
+                    <li><a href="#">SHIPPING POLICY</a></li>
+                    <li><a href="#">RETURNS & EXCHANGES</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">PRIVACY POLICY</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4 class="footer-heading">NEWSLETTER</h4>
+                <div class="cyber-newsletter">
+                    <input type="email" placeholder="YOUR EMAIL">
+                    <button class="newsletter-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year">2025</span> NEXUSSHOP. ALL RIGHTS RESERVED.</p>
+            <div class="footer-glitch"></div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
