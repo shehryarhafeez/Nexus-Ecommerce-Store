@@ -18,6 +18,11 @@ A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/U
   - Particle.js background effects
   - Smooth transitions between views
 
+
+## Live Demo
+
+- [https://shehryarhafeez.github.io/Nexus-Ecommerce-Store/]
+
 ## Technologies Used
 
 - **Frontend**:
