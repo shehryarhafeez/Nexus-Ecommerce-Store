@@ -56,7 +56,7 @@ body {
     width: 70px;
     height: 70px;
     background: var(--glass-dark);
-    border-radius: 50%;
+    border-radius: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -466,6 +466,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
+    margin-left: 0;
 }
 
 .add-to-cart-btn:hover {
@@ -553,6 +554,7 @@ body {
     box-shadow: var(--shadow-sm);
     position: relative;
     z-index: 1;
+    padding: 0%;
 }
 
 .cyber-product::before {
@@ -589,7 +591,8 @@ body {
 }
 
 .product-info {
-    padding: 1.8rem;
+    padding: 1.8rem 0; /* Top/bottom padding only, no left/right */
+    margin: 0 1.8rem;
 }
 
 .product-title {
@@ -597,14 +600,18 @@ body {
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
     letter-spacing: 0.5px;
+     padding-left: 0; /* Ensure no padding on these elements */
+    margin-left: 0;
 }
 
 .product-price {
     color: var(--secondary);
     font-weight: 700;
     font-size: 1.4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     text-shadow: 0 0 5px var(--secondary);
+     padding-left: 0; /* Ensure no padding on these elements */
+    margin-left: 0;
 }
 
 .product-variants {
@@ -612,6 +619,8 @@ body {
     gap: 0.8rem;
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
+    padding-left: 0; /* Ensure no padding on these elements */
+    margin-left: 0;
 }
 
 .variant-btn {
@@ -692,6 +701,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    padding: 0%;
 }
 
 .detail-image {
@@ -704,6 +714,7 @@ body {
 }
 
 .detail-info h2 {
+     padding: 0;
     font-family: 'Orbitron', sans-serif;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
@@ -713,6 +724,7 @@ body {
 }
 
 .detail-price {
+     padding: 0;
     font-size: 2.2rem;
     font-weight: 700;
     color: var(--secondary);
@@ -721,6 +733,7 @@ body {
 }
 
 .detail-description {
+     padding: 0;
     color: var(--text-secondary);
     line-height: 1.8;
     margin-bottom: 2.5rem;
@@ -750,19 +763,20 @@ body {
     align-items: center;
     background: var(--glass-dark);
     border-radius: 18px;
+
     border: 1px solid var(--glass-border);
 }
 
 .quantity-btn {
     background: transparent;
     border: none;
-   width: 10px;
+    width: 10px;
     height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 0.9rem;
     color: var(--text-primary);
     transition: var(--transition);
 }
@@ -1649,13 +1663,11 @@ body {
         gap: 1.5rem;
     }
     
- 
-   .cyber-nav {
+    .cyber-nav {
         width: 420px;
         justify-content: center;
         gap: 0.4rem;
     }
-    
     
     .hero-title {
         font-size: 2.5rem;
@@ -1777,7 +1789,3 @@ body {
     }
 
 }
-
-
-
-
