@@ -757,8 +757,8 @@ body {
 .quantity-btn {
     background: transparent;
     border: none;
-    width: 50px;
-    height: 50px;
+   width: 10px;
+    height: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1775,4 +1775,5 @@ body {
     }
 
 }
+
 
