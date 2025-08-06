@@ -773,7 +773,7 @@ body {
 }
 
 .quantity-input {
-    width: 60px;
+    width: 50px;
     text-align: center;
     border: none;
     background: transparent;
@@ -1775,3 +1775,4 @@ body {
     }
 
 }
+
