@@ -749,8 +749,7 @@ body {
     display: flex;
     align-items: center;
     background: var(--glass-dark);
-    border-radius: 8px;
-    overflow: hidden;
+    border-radius: 18px;
     border: 1px solid var(--glass-border);
 }
 
@@ -1775,5 +1774,6 @@ body {
     }
 
 }
+
 
 
