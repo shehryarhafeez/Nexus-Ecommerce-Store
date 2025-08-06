@@ -1,6 +1,9 @@
+---
 # NexusShop - Cyberpunk E-Commerce Platform
 
 A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/UX design principles and full shopping functionality.
+
+---
 
 ## Features
 
@@ -18,10 +21,12 @@ A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/U
   - Particle.js background effects
   - Smooth transitions between views
 
+---
 
 ## Live Demo
 
 - [https://shehryarhafeez.github.io/Nexus-Ecommerce-Store/]
+---
 
 ## Technologies Used
 
@@ -38,3 +43,4 @@ A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/U
 
 ## Created By
 Shehryar Hafeez - shehryarhafeez180@gmail.com
+---
