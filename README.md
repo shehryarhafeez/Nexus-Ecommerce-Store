@@ -25,7 +25,7 @@ A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/U
 
 ## Live Demo
 
-- [https://shehryarhafeez.github.io/Nexus-Ecommerce-Store/]
+- https://shehryarhafeez.github.io/Nexus-Ecommerce-Store/
 ---
 
 ## Technologies Used
@@ -42,5 +42,5 @@ A futuristic e-commerce website with cyberpunk aesthetics, featuring modern UI/U
   - Custom animations and transitions
 
 ## Created By
-Shehryar Hafeez - shehryarhafeez180@gmail.com
+- Shehryar Hafeez - shehryarhafeez180@gmail.com
 ---
